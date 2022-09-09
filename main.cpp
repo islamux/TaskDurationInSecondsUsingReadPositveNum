@@ -15,11 +15,11 @@ using namespace std;
 
 /*
     * Calculate the task duration in seconds
-        * Read : days, hours, minutes, seconds ==> struct
+        * Read : days, hours, minutes, seconds ==> ReadingPositiveNum Func
         *               2,      5,    ,     45,         35      = 193,535
         
          # Steps
-            - struct , days, hours, minuts, seconds //? Done
+            - ReadingPositiveNum Func , days, hours, minuts, seconds //? Done
             - ReadStruct                                          //? Done
             -  HoursToMinutes()
             
@@ -48,17 +48,17 @@ int main(){
     // Seconds 
     PrintNumberIntWithDoubleMsg("Seconds = ",secondsNum ,".");
 
-    // Minutes ==> seconds | Read Minutes from struct 
+    // Minutes ==> seconds | Read Minutes from ReadingPositiveNum Func 
     int minutuesToSeconds =  MinutesToSecondsInt(miuntesNum);
     PrintNumberIntWithDoubleMsg("Minutes To Seconds = " ,minutuesToSeconds, " seconds.");
 
-    // Hours ==> minutes | Read hours from struct
+    // Hours ==> minutes | Read hours from ReadingPositiveNum Func
     int hoursToMinutes = HoursToMinutesInt(hoursNum);
     //PrintNumberIntWithDoubleMsg("Hours = ", hoursToMinutes, " minutes.");
     int hoursToSeconds = MinutesToSecondsInt(hoursToMinutes);
     PrintNumberIntWithDoubleMsg("Hours To Seconds = ", hoursToSeconds, " seconds");
 
-    // Days ==> hours | Read days from struct
+    // Days ==> hours | Read days from ReadingPositiveNum Func
      int daysToHours =  DaysToHoursInt(daysNum);
     //PrintNumberIntWithDoubleMsg("Days = ",daysToHours, " hours.");
     int hoursToMinutes2 =  HoursToMinutesInt(daysToHours);
